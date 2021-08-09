@@ -1,5 +1,6 @@
 import React from "react";
 import search from "../../images/search.png";
+import "./SearchInput.scss";
 
 export default function SearchInput() {
     return <div className="search-container">

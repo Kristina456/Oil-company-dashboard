@@ -1,0 +1,21 @@
+.notifications {
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notificatios__number {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+    right: 10px;
+}

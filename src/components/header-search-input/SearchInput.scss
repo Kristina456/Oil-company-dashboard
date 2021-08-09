@@ -1,0 +1,26 @@
+.search-container {
+    margin: 0 25px;
+}
+
+.search-container form {
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #626263;
+    border-radius: 6px;
+}
+
+.search-container button {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border: none;
+}
+
+.search-container input {
+    position: relative;
+    top: 8px;
+    left: 20px;
+    border: none;
+}
