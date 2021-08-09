@@ -3,7 +3,7 @@ import CardAvg, { CardAvgData } from "../components/card-avg/CardAvg";
 import { getDashboardMotorGasolinePrice } from '../service/dashboard-service'
 
 
-export default function Home() {
+export default function dashboard() {
 
     const cardsData = getDashboardMotorGasolinePrice();
 
