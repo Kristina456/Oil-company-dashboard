@@ -1,7 +1,7 @@
 import React from "react";
-import Sidebar from "../sidebar/Sidebar";
-import MainContent from "./MainContent";
-import './Main.scss';
+import Sidebar from "../../layout/sidebar/Sidebar";
+import Router from "../../layout/Router";
+import "./MainWrapper.scss";
 import { BrowserRouter } from "react-router-dom";
 
 export default function MainWrapper() {
@@ -12,7 +12,7 @@ export default function MainWrapper() {
                 <Sidebar />
             </div>
             <div className="main-content">
-                <MainContent />
+                <Router />
             </div>
         </BrowserRouter>
     </div>

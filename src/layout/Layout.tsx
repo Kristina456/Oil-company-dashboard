@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./header/Header";
-import MainWrapper from "./main/MainWrapper";
-
+import MainWrapper from "./wrapper/MainWrapper";
 
 export default function Layout() {
 
