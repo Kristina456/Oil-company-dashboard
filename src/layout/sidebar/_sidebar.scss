@@ -1,9 +1,24 @@
-.sidebar-item {
+.sidebar__item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sidebar-item img {
-    margin-top: 30px;
+.sidebar__item div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+
+.active {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
 }

@@ -25,3 +25,7 @@
     border: none;
     width: 80%;
 }
+
+.search-container input:focus {
+    outline: none;
+}

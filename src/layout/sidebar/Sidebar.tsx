@@ -8,10 +8,21 @@ import sidebarFourth from "../../images/sidebarFourth.png";
 
 export default function Sidebar() {
 
-    return <div className="sidebar-item">
-        <NavLink to="/dashboard"><img src={sidebarFirst} /></NavLink>
-        <NavLink to="/gas-stations"><img src={sidebarSecond} /> </NavLink>
-        <NavLink to="/fuel-type"><img src={sidebarThird} /></NavLink>
-        <NavLink to="/users"><img src={sidebarFourth} /> </NavLink>
-    </div>
+    return <div >
+        <div className="sidebar__item">
+            <div>
+                <NavLink to="/dashboard" activeClassName="active"><img src={sidebarFirst} /></NavLink>
+            </div>
+            <div>
+                <NavLink to="/gas-stations" activeClassName="active"><img src={sidebarSecond} /> </NavLink>
+            </div>
+            <div>
+                <NavLink to="/fuel-type" activeClassName="active"><img src={sidebarThird} /></NavLink>
+            </div>
+            <div>
+                <NavLink to="/users" activeClassName="active"><img src={sidebarFourth} /> </NavLink>
+            </div>
+        </div>
+
+    </div >
 }
