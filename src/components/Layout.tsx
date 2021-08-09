@@ -1,13 +1,12 @@
 import React from "react";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Main from "./Main";
+import Header from "./header/Header";
+import MainWrapper from "./main/MainWrapper";
+
 
 export default function Layout() {
 
     return <div>
         <Header />
-        <Sidebar />
-        <Main />
+        <MainWrapper />
     </div>
 }
