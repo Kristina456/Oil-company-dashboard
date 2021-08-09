@@ -1,14 +1,28 @@
 import React from "react";
+import './CardAvg.scss';
 
-export default function CardAvg() {
-    return <div>
+export type CardAvgData = {
+    title: string;
+    /**
+     * Price expressed in dollars
+     */
+    price: number;
+    /**
+     * Average price in decimal percentage
+     * eg. -0.06 
+     */
+    averagePrice: number;
+}
+
+export default function CardAvg({ title, price, averagePrice }: CardAvgData) {
+    return <div className="card">
         <div>
-            <div>Motor Gasoline</div>
-            <div>$1.58</div>
+            <div>{title}</div>
+            <div>${price}</div>
             <div>AVG PRICE</div>
             <div>
-                <div></div>
-                <div>-6%</div>
+                <div>{averagePrice > 0 ? "up" : "down"}</div>
+                <div>{averagePrice * 100}%</div>
             </div>
         </div>
     </div>
