@@ -6,8 +6,8 @@ import Main from "./Main";
 export default function Layout() {
 
     return <div>
-        <div><Header /></div>
-        <div><Sidebar /></div>
-        <div><Main /></div>
+        <Header />
+        <Sidebar />
+        <Main />
     </div>
 }
