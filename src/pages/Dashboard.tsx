@@ -4,11 +4,13 @@ import CardAvg, { CardAvgData } from "../components/card-avg/CardAvg";
 import PriceStatistic from "../components/price-statistics/PriceStatistic";
 import { getDashboardMotorGasolinePrice } from '../service/dashboard-service'
 import "./Dashboard.scss";
+import SalesReport from '../components/sales-report/SalesReport'
 
 
 export default function dashboard() {
 
     const cardsData = getDashboardMotorGasolinePrice();
+
 
     return (<div className="dashboard">
         <div>
@@ -23,11 +25,11 @@ export default function dashboard() {
                 </div>
             </div>
             <div><PriceStatistic /></div>
+            <div><SalesReport /></div>
         </div>
         <div>
-            right
-        </div>
 
+        </div>
     </div>
 
     )
