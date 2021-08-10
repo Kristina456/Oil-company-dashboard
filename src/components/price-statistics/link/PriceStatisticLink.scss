@@ -1,0 +1,25 @@
+.price-static-link {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.price-static-link__text {
+    color: rgba(0, 54, 122, 1);
+    font-size: 12px;
+    margin: 13px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.price-static-link__button {
+    width: 90px;
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+    background-color: rgba(0, 82, 180, 1);
+    border: none;
+}
