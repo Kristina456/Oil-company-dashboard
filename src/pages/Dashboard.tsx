@@ -12,9 +12,9 @@ export default function dashboard() {
 
     return (<div className="dashboard">
         <div>
-            <div className="first">
+            <div className="dashboard__left">
                 <CardAvgGraph />
-                <div className="cardAvg__item">
+                <div className="dashboard__left__cardAvg">
                     {
                         cardsData.map((data: CardAvgData) => {
                             return <CardAvg title={data.title} price={data.price} averagePrice={data.averagePrice} />

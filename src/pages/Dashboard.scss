@@ -1,12 +1,13 @@
-.cardAvg__item {
+.dashboard__left__cardAvg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.first {
+.dashboard__left {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .dashboard {
