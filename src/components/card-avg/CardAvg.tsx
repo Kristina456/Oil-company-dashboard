@@ -15,15 +15,23 @@ export type CardAvgData = {
 }
 
 export default function CardAvg({ title, price, averagePrice }: CardAvgData) {
-    return <div className="card">
-        <div>
-            <div>{title}</div>
-            <div>${price}</div>
-            <div>AVG PRICE</div>
-            <div>
-                <div>{averagePrice > 0 ? "up" : "down"}</div>
-                <div>{averagePrice * 100}%</div>
+    return <div>
+        <div className="cardAvg" >
+            <div className="cardAvg__title" >{title}</div>
+            <div className="cardAvg__dolar-price">${price}</div>
+            <div className="cardAvg__avg-price">AVG PRICE</div>
+            <div className="cardAvg__price-percentage__item">
+                <span>{averagePrice > 0 ?
+                    <div style={{ color: "rgba(221, 69, 69, 1)" }}>
+                        <span>&#8595;</span>
+                        <span>{averagePrice * 100}%</span>
+                    </div> :
+                    <div style={{ color: "rgba(51, 208, 103, 1)" }}>
+                        <span>&#8593;</span>
+                        <span>{averagePrice * 100}%</span>
+                    </div>}
+                </span>
             </div>
         </div>
-    </div>
+    </div >
 }

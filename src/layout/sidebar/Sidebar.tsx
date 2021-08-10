@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, NavLink, Route, Switch } from "react-router-dom";
-import "./_sidebar.scss";
+import "./Sidebar.scss";
 import sidebarFirst from "../../images/sidebarFirst.png";
 import sidebarSecond from "../../images/sidebarSecond.png";
 import sidebarThird from "../../images/sidebarThird.png";
