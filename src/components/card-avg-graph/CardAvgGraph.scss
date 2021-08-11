@@ -3,4 +3,12 @@
     height: 230px;
     border-radius: 6px;
     background-color: rgba(0, 82, 180, 1);
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1410px) {
+    .avg-graph {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
 }

@@ -1,16 +1,30 @@
+.dashboard__left {
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
 .dashboard__left__cardAvg {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex: 1;
-}
-
-.dashboard__left {
-    flex-wrap: wrap;
-    max-width: 985px;
-    margin: 25px;
+    width: 100%;
 }
 
 .dashboard {
     display: flex;
+}
+
+@media screen and (max-width: 1410px) {
+    .dashboard__left__cardAvg {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+    }
 }

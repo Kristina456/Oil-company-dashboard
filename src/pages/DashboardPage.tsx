@@ -22,6 +22,11 @@ export default function DashboardPage() {
                     <CardAvg data={cardsData} />
                 </div>
                 <div><PriceStatistic /></div>
+                <div>
+                    <div></div>
+                    <div></div>
+
+                </div>
             </div >
             <div className="dashboard__right">
                 <SalesReport data={salesReport} />

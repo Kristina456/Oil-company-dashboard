@@ -16,15 +16,20 @@ export type PriceStatisticsData = {
     averagePrice: number
 }
 
+const colors = ["rgba(69, 150, 209, 1)", "rgba(255, 81, 81, 1)", "rgba(255, 181, 71, 1)"];
+const backgroundColors = ["rgba(69, 150, 209, 0.5)", "rgba(255, 81, 81, 0.5)", "rgba(255, 181, 71, 0.5)"];
+
 
 export default function OilInfo({ data }: { data: PriceStatisticsData[] }) {
     return (
         <div className="oil-info">
             {
-                data.map((data) => {
+                data.map((data, i) => {
                     return (
                         <div className="oil-card">
-                            <div className="oil-card__chart">{data.name.charAt(0)}</div>
+                            <div className="oil-card__chart" key={i} style={{ backgroundColor: backgroundColors[i], color: colors[i] }}>
+                                {data.name.charAt(0)}
+                            </div>
                             <div className="oil-card__info">
                                 <div className="name">
                                     <div className="name__title">{data.name}</div>
