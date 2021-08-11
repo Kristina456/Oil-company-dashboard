@@ -1,6 +1,11 @@
 @import "../../scss/Colors.scss";
 .cardAvg {
-    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
     width: 200px;
     height: 230px;
     padding: 16px;

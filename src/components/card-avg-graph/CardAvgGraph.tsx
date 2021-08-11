@@ -26,17 +26,34 @@ export default function CardAvgGraph() {
             <div>$1.96</div>
             <div>AVG PRICE</div>
         </div>
-        <Line data={data} options={{
-            title: {
-                display: false,
-                text: 'Average Rainfall per month',
-                fontSize: 20
-            },
-            legend: {
-                display: false,
-                position: 'right'
-            }
-        }} />
+        <Line data={data}
+            options={{
+                title: {
+                    display: false,
+                    text: 'Average Rainfall per month',
+                    fontSize: 20
+                },
+                legend: {
+                    display: false,
+                    position: 'right'
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawOnChartArea: false
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: false,
+                            drawOnChartArea: false
+
+                        }
+                    }]
+                }
+
+            }} />
     </div>
 }
 
