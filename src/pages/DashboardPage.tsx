@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import CardAvgGraph from "../components/card-avg-graph/CardAvgGraph";
 import CardAvg, { CardAvgData } from "../components/card-avg/CardAvg";
 import PriceStatistic from "../components/price-statistics/PriceStatistic";
-import { getDashboardMotorGasolinePrice, getSalesReportInformations as getSalesReportInformations } from '../service/dashboard-service'
+import { getCardOilGasProviders, getDashboardMotorGasolinePrice, getSalesReportInformations as getSalesReportInformations } from '../service/dashboard-service'
 import "./DashboardPage.scss";
 import SalesReport from '../components/sales-report/SalesReport';
+import OilGasProviders from "../components/oil-and-gas-providers/OilGasProviders";
 
 
 
 export default function DashboardPage() {
 
     const cardsData = getDashboardMotorGasolinePrice();
-    const salesReport = getSalesReportInformations()
+    const salesReport = getSalesReportInformations();
+    const oilReport = getCardOilGasProviders();
 
 
     return (
@@ -23,7 +25,7 @@ export default function DashboardPage() {
                 </div>
                 <div><PriceStatistic /></div>
                 <div>
-                    <div></div>
+                    <OilGasProviders data={oilReport} />
                     <div></div>
 
                 </div>

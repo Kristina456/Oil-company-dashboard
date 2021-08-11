@@ -1,4 +1,5 @@
 import { CardAvgData } from '../components/card-avg/CardAvg';
+import { CardOilGasProviders } from '../components/oil-and-gas-providers/OilGasProviders';
 import { PriceStatisticsData } from '../components/price-statistics/OilInfo/OilInfo';
 import { CardSalesReport } from '../components/sales-report/SalesReport';
 
@@ -97,6 +98,35 @@ export function getSalesReportInformations(): CardSalesReport[] {
 			provider: 'INA',
 			stats: 1.58,
 			percentage: +0.21
+		}
+	];
+}
+
+export function getCardOilGasProviders(): CardOilGasProviders[] {
+	return [
+		{
+			name: 'INA d.d',
+			location: 'Zagreb, Croatia'
+		},
+		{
+			name: 'Shell',
+			location: 'The Hague, Netherlands'
+		},
+		{
+			name: 'Repsol',
+			location: 'Madrid, Spain'
+		},
+		{
+			name: 'Total',
+			location: 'Courbevoie, France'
+		},
+		{
+			name: 'Chevron	',
+			location: 'San Ramon, United States'
+		},
+		{
+			name: 'INA d.d.',
+			location: 'Zageb, Croatia '
 		}
 	];
 }
