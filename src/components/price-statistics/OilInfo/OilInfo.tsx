@@ -17,26 +17,34 @@ export type PriceStatisticsData = {
 }
 
 
-export default function OilInfo({ name, price, averagePrice }: PriceStatisticsData) {
+export default function OilInfo({ data }: { data: PriceStatisticsData[] }) {
     return (
         <div className="oil-info">
-            <div className="oil-info__chart">{name.charAt(0)}</div>
-            <div className="oil-info__info">
-                <div>
-                    <div className="oil-info__info__name">{name}</div>
-                    <div>{averagePrice > 0 ?
-                        <div style={{ color: "rgba(221, 69, 69, 1)" }}>
-                            <span>&#8595;</span>
-                            <span>{averagePrice * 100}%</span>
-                        </div> :
-                        <div style={{ color: "rgba(51, 208, 103, 1)" }}>
-                            <span>&#8593;</span>
-                            <span>{averagePrice * 100}%</span>
-                        </div>}
-                    </div>
-                </div>
-                <div>${price}</div>
-            </div>
+            {
+                data.map((data) => {
+                    return (
+                        <div className="oil-card">
+                            <div className="oil-card__chart">{data.name.charAt(0)}</div>
+                            <div className="oil-card__info">
+                                <div className="name">
+                                    <div className="name__title">{data.name}</div>
+                                    <div>{data.averagePrice > 0 ?
+                                        <div style={{ color: "rgba(221, 69, 69, 1)" }}>
+                                            <span>&#8595;</span>
+                                            <span>{data.averagePrice * 100}%</span>
+                                        </div> :
+                                        <div style={{ color: "rgba(51, 208, 103, 1)" }}>
+                                            <span>&#8593;</span>
+                                            <span>{data.averagePrice * 100}%</span>
+                                        </div>}
+                                    </div>
+                                </div>
+                                <div className="price">${data.price}</div>
+                            </div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }

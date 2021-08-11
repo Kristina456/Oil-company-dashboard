@@ -1,16 +1,18 @@
+@import "../../../scss/Colors.scss";
 .oil-info {
     display: flex;
     flex-direction: row;
     margin-right: 10px;
     margin-bottom: 10px;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.oil-info__info {
+.oil-card {
     display: flex;
-    flex-direction: row;
 }
 
-.oil-info__chart {
+.oil-card__chart {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -18,29 +20,42 @@
     justify-content: center;
     align-items: center;
     font-weight: 900;
+    margin-right: 12px;
+    font-size: 16px;
 }
 
-.oil-info__chart:nth-child(1) {
+.oil-card__info {
+    font-size: 13px;
+}
+
+.oil-card__chart:nth-child(1) {
     color: rgba(69, 150, 209, 1);
     background-color: rgba(69, 150, 209, 0.5);
 }
 
-.oil-info__chart:nth-child(2) {
+.oil-card__chart:nth-child(2) {
     background-color: rgba(255, 81, 81, 0.5);
     color: rgba(255, 81, 81, 1);
 }
 
-.oil-info__chart:nth-child(3) {
+.oil-card__chart:nth-child(3) {
     background-color: rgba(255, 181, 71, 0.5);
     color: rgba(255, 181, 71, 1);
 }
 
-.oil-info__info {
-    font-size: 13px;
-    margin-left: 12px;
+.name {
+    display: flex;
+    flex-direction: row;
 }
 
-.oil-info__info__name {
+.name__title {
     font-weight: 900;
-    margin: 0 15px 5px 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: $first-color;
+}
+
+.price {
+    font-size: 13px;
+    color: $secondary-color;
 }

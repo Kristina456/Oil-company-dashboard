@@ -1,7 +1,9 @@
 @import "../../scss/Colors.scss";
 .cardAvg {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 730px;
 }
 
 .card {
@@ -9,7 +11,7 @@
     width: 200px;
     height: 230px;
     padding: 16px;
-    margin: 10px 0 10px 10px;
+    margin: 0px 0 10px 10px;
     color: $first-color;
 }
 

@@ -17,11 +17,7 @@ export default function PriceStatistic() {
                 <div>
                     <div><img src={Frame34} /></div>
                     <div className="price-statistic__data">
-                        {
-                            oilCardsData.map((data: PriceStatisticsData) => {
-                                return <OilInfo name={data.name} price={data.price} averagePrice={data.averagePrice} />
-                            })
-                        }
+                        <OilInfo data={oilCardsData} />
                     </div>
                 </div>
                 <div>

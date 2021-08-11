@@ -2,11 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex: 1;
 }
 
 .dashboard__left {
-    display: flex;
     flex-wrap: wrap;
+    max-width: 985px;
+    margin: 25px;
 }
 
 .dashboard {

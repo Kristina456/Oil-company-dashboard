@@ -18,12 +18,8 @@ export default function DashboardPage() {
         <div className="dashboard">
             <div className="dashboard__left">
                 <div className="dashboard__left__cardAvg">
-                    <div>
-                        <CardAvgGraph />
-                    </div>
-                    <div >
-                        <CardAvg data={cardsData} />
-                    </div>
+                    <CardAvgGraph />
+                    <CardAvg data={cardsData} />
                 </div>
                 <div><PriceStatistic /></div>
             </div >
