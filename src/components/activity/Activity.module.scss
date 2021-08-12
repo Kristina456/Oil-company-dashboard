@@ -1,0 +1,67 @@
+@import "../../scss/Colors.scss";
+.activity {
+    background-color: white;
+    padding: 35px;
+    font-size: 13px;
+    width: 100%;
+    flex: 1 0 50%;
+    margin-top: 30px;
+    height: 460px;
+}
+
+.activity__title {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.activity__title__main {
+    color: $first-color;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.activity__title__subtitle {
+    color: $secondary-color;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableData {
+    height: calc(400px / 6);
+}
+
+.dataTime {
+    font-weight: 900;
+    font-size: 13px;
+    color: $first-color;
+}
+
+.img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $fift-green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updatedList {
+    font-weight: 900;
+    color: $first-color;
+    margin-bottom: 5px;
+}
+
+.name,
+.dataActivity {
+    color: $secondary-color;
+}
+
+.dataActivity {
+    font-weight: 900;
+}

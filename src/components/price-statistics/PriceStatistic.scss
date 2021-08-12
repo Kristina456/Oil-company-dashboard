@@ -1,3 +1,4 @@
+@import "../../scss/Colors.scss";
 .price-statistic {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +13,7 @@
     font-weight: 900;
     padding-bottom: 20px;
     border-bottom: 1px solid rgba(230, 230, 230, 1);
+    color: $first-color;
 }
 
 .price-statistic__informations {

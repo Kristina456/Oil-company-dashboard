@@ -1,3 +1,4 @@
+import { CardActivity } from '../components/activity/Activity';
 import { CardAvgData } from '../components/card-avg/CardAvg';
 import { CardOilGasProviders } from '../components/oil-and-gas-providers/OilGasProviders';
 import { PriceStatisticsData } from '../components/price-statistics/OilInfo/OilInfo';
@@ -127,6 +128,36 @@ export function getCardOilGasProviders(): CardOilGasProviders[] {
 		{
 			name: 'INA d.d.',
 			location: 'Zageb, Croatia '
+		}
+	];
+}
+
+export function getActivity(): CardActivity[] {
+	return [
+		{
+			time: '16:38',
+			name: 'John Doe',
+			activity: 'Price change'
+		},
+		{
+			time: '16:38',
+			name: 'John Doe',
+			activity: 'Price change'
+		},
+		{
+			time: '16:38',
+			name: 'John Doe',
+			activity: 'Price change'
+		},
+		{
+			time: '16:38',
+			name: 'John Doe',
+			activity: 'Price change'
+		},
+		{
+			time: '16:38',
+			name: 'John Doe',
+			activity: 'Price change'
 		}
 	];
 }

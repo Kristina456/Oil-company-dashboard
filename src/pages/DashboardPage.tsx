@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import CardAvgGraph from "../components/card-avg-graph/CardAvgGraph";
 import CardAvg, { CardAvgData } from "../components/card-avg/CardAvg";
 import PriceStatistic from "../components/price-statistics/PriceStatistic";
-import { getCardOilGasProviders, getDashboardMotorGasolinePrice, getSalesReportInformations as getSalesReportInformations } from '../service/dashboard-service'
+import { getActivity, getCardOilGasProviders, getDashboardMotorGasolinePrice, getSalesReportInformations as getSalesReportInformations } from '../service/dashboard-service'
 import "./DashboardPage.scss";
 import SalesReport from '../components/sales-report/SalesReport';
 import OilGasProviders from "../components/oil-and-gas-providers/OilGasProviders";
+import Activity from "../components/activity/Activity";
 
 
 
@@ -14,6 +15,7 @@ export default function DashboardPage() {
     const cardsData = getDashboardMotorGasolinePrice();
     const salesReport = getSalesReportInformations();
     const oilReport = getCardOilGasProviders();
+    const activityReport = getActivity();
 
 
     return (
@@ -24,10 +26,13 @@ export default function DashboardPage() {
                     <CardAvg data={cardsData} />
                 </div>
                 <div><PriceStatistic /></div>
-                <div>
-                    <OilGasProviders data={oilReport} />
-                    <div></div>
-
+                <div className="dashboard__left__tables">
+                    <div className="oil-gas-provider">
+                        <OilGasProviders data={oilReport} />
+                    </div>
+                    <div className="activity">
+                        <Activity data={activityReport} />
+                    </div>
                 </div>
             </div >
             <div className="dashboard__right">

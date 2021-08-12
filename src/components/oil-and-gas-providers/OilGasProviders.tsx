@@ -12,6 +12,8 @@ const backgroundColors = ["rgba(0, 82, 180, 0.5)", "rgba(255, 81, 81, 0.5)", "rg
 
 export default function OilGasProviders({ data }: { data: CardOilGasProviders[] }) {
 
+
+
     return (
         <div className="oil-gas-providers">
             <div className="title">Oil & Gas Providers </div>

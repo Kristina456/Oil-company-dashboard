@@ -1,14 +1,16 @@
 @import "../../scss/Colors.scss";
 .oil-gas-providers {
-    max-width: 500px;
-    margin: 30px 0;
     background-color: white;
     padding: 35px 45px;
+    margin: 30px 30px 0 0;
+    height: 460px;
 }
 
 .title {
     font-size: 20px;
     color: $first-color;
+    font-weight: 900;
+    margin-bottom: 30px;
 }
 
 td {
