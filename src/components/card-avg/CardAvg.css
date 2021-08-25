@@ -1,0 +1,44 @@
+.cardAvg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  width: calc(100% /3 - 12px);
+  min-width: 150px;
+}
+
+.card__item {
+  background-color: #ffffff;
+  height: 230px;
+  padding: 16px;
+  margin: 0px 0 10px 0px;
+  color: #35384d;
+}
+
+.cardAvg__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.cardAvg__dolar-price {
+  color: #35384d;
+  size: 25px;
+  font-weight: 900;
+  margin: 12px 0;
+}
+
+.cardAvg__avg-price {
+  font-size: 8px;
+  font-weight: 500;
+  color: #9da8b6;
+}
+/*# sourceMappingURL=CardAvg.css.map */

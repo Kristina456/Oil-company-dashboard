@@ -21,14 +21,14 @@ export default function OilGasProviders({ data }: { data: CardOilGasProviders[] 
                 {
                     data.map((info, i) => {
                         return (
-                            <tr>
-                                <td >
+                            <tr className="oil-gas-table">
+                                <td className="oil-gas-row">
                                     <div className="first-chart" style={{ backgroundColor: backgroundColors[i], color: colors[i] }}>
                                         {info.name.charAt(0)}
                                     </div>
                                 </td>
-                                <td className="factory-name">{info.name}</td>
-                                <td className="location"><img src={Shape2} alt="location" /> {info.location}</td>
+                                <td className="factory-name oil-gas-row">{info.name}</td>
+                                <td className="location oil-gas-row"><img src={Shape2} alt="location" /> {info.location}</td>
                                 <td>link</td>
                             </tr>
                         )

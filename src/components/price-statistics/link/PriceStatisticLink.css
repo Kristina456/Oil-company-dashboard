@@ -1,0 +1,33 @@
+.price-static-link {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.price-static-link__text {
+  color: #00367a;
+  font-size: 12px;
+  margin: 13px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.price-static-link__button {
+  width: 90px;
+  height: 30px;
+  color: white;
+  border-radius: 6px;
+  background-color: #0052b4;
+  border: none;
+}
+/*# sourceMappingURL=PriceStatisticLink.css.map */

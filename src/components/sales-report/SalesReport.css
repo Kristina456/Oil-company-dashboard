@@ -1,0 +1,54 @@
+.sales-report {
+  min-width: 300px;
+  margin: 0 24px;
+}
+
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+} */
+.title {
+  size: 20px;
+  padding-left: 20px;
+  color: #35384d;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.subtitles {
+  font-size: 13px;
+  color: #9da8b6;
+  text-align: left;
+}
+
+/* th:nth-child(1) {
+    width: 20%;
+}
+
+th:nth-child(2),
+th:nth-child(3) {
+    width: 40%;
+} */
+/* td,
+th {
+    padding: 10px 20px;
+} */
+/* td {
+    height: 50px;
+}
+ */
+.informations {
+  font-size: 13px;
+  color: #35384d;
+  border-radius: 5px;
+}
+
+.informations__provider {
+  font-weight: 900;
+}
+
+.informations:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=SalesReport.css.map */

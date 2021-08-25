@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,aAAa,EAAE,GAAG;EAClB,gBAAgB,EAAE,OAAmB;EACrC,YAAY,EAAE,IAAI;CACrB;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,UAAU,CAAC;IACP,SAAS,EAAE,IAAI;IACf,aAAa,EAAE,IAAI;GACtB",
+    "sources": [
+        "CardAvgGraph.scss"
+    ],
+    "names": [],
+    "file": "CardAvgGraph.css"
+}

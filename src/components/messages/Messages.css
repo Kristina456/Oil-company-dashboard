@@ -1,0 +1,66 @@
+.messages {
+  max-width: 350px;
+  margin: 15px;
+}
+
+.messages__title {
+  font-weight: 900;
+  size: 20px;
+  color: #35384d;
+  margin: 0 25px;
+}
+
+.message {
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin: 15px;
+}
+
+.message__item {
+  width: 50%;
+}
+
+.message__avatar-img {
+  margin-right: 15px;
+  min-width: 40px;
+  height: 40px;
+}
+
+.message__avatar-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #33d067;
+  border-radius: 50%;
+  position: relative;
+  top: -15px;
+  left: 30px;
+}
+
+.message__name {
+  font-size: 13px;
+  font-weight: 900;
+  color: #35384d;
+}
+
+.message__message {
+  font-size: 13px;
+  color: #9da8b6;
+  font-weight: 500;
+}
+
+.message__time {
+  font-weight: 900;
+  color: #9da8b6;
+}
+
+.message:hover {
+  background-color: white;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=Messages.css.map */

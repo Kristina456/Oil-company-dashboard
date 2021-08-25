@@ -1,5 +1,7 @@
+import { time } from 'console';
 import { CardActivity } from '../components/activity/Activity';
 import { CardAvgData } from '../components/card-avg/CardAvg';
+import { CardMessage } from '../components/messages/Messages';
 import { CardOilGasProviders } from '../components/oil-and-gas-providers/OilGasProviders';
 import { PriceStatisticsData } from '../components/price-statistics/OilInfo/OilInfo';
 import { CardSalesReport } from '../components/sales-report/SalesReport';
@@ -158,6 +160,37 @@ export function getActivity(): CardActivity[] {
 			time: '16:38',
 			name: 'John Doe',
 			activity: 'Price change'
+		}
+	];
+}
+
+export function getMessages(): CardMessage[] {
+	return [
+		{
+			name: 'Jessica Smith',
+			message: 'Good Morning!',
+			time: '32MIN'
+		},
+		{
+			name: 'Jessica Smith',
+			message: 'Good Morning!',
+			time: '32MIN'
+		},
+		{
+			name: 'Jessica Smith',
+			message: 'Good Morning!',
+			time: '32MIN'
+		},
+		{
+			name: 'Jessica Smith',
+			message: 'Good Morning!',
+			time: '32MIN'
+		},
+		{
+			name: 'Jessica Smith',
+			message:
+				'Good Morning!gfhfgh gh fghfg hf ghfg hfg hfhg fghfgh  gfhfghfgh fgh  dfgd fg dfg dfg df gdf gdfg dfg dfg df jdshfkjsdhfjks kjsdhf kjsdhf kjsdhf kjsdhf jsdkf jsdhjkfhsd jfhsdjk fshdj fhsj hj hjk shfsdj h dfgd fgdf gdfgdfgd fgdf gdf gdf ',
+			time: '32MIN'
 		}
 	];
 }

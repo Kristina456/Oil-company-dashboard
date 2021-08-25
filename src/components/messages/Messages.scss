@@ -1,0 +1,55 @@
+@import "../../scss/Colors.scss";
+.messages {
+    max-width: 350px;
+    margin: 15px;
+    &__title {
+        font-weight: 900;
+        size: 20px;
+        color: $first-color;
+        margin: 0 25px;
+    }
+}
+
+.message {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    &__item {
+        width: 50%;
+    }
+    &__avatar-img {
+        margin-right: 15px;
+        min-width: 40px;
+        height: 40px;
+    }
+    &__avatar-dot {
+        width: 10px;
+        height: 10px;
+        background-color: $fourth-green;
+        border-radius: 50%;
+        position: relative;
+        top: -15px;
+        left: 30px;
+    }
+    &__name {
+        font-size: 13px;
+        font-weight: 900;
+        color: $first-color;
+    }
+    &__message {
+        font-size: 13px;
+        color: $secondary-color;
+        font-weight: 500;
+    }
+    &__time {
+        font-weight: 900;
+        color: $secondary-color;
+    }
+}
+
+.message:hover {
+    background-color: white;
+    border-radius: 5px;
+}

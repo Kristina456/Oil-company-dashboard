@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import CardAvgGraph from "../components/card-avg-graph/CardAvgGraph";
 import CardAvg, { CardAvgData } from "../components/card-avg/CardAvg";
 import PriceStatistic from "../components/price-statistics/PriceStatistic";
-import { getActivity, getCardOilGasProviders, getDashboardMotorGasolinePrice, getSalesReportInformations as getSalesReportInformations } from '../service/dashboard-service'
+import { getActivity, getCardOilGasProviders, getDashboardMotorGasolinePrice, getMessages, getSalesReportInformations as getSalesReportInformations } from '../service/dashboard-service'
 import "./DashboardPage.scss";
 import SalesReport from '../components/sales-report/SalesReport';
 import OilGasProviders from "../components/oil-and-gas-providers/OilGasProviders";
 import Activity from "../components/activity/Activity";
+import Messages from "../components/messages/Messages";
 
 
 
@@ -16,7 +17,7 @@ export default function DashboardPage() {
     const salesReport = getSalesReportInformations();
     const oilReport = getCardOilGasProviders();
     const activityReport = getActivity();
-
+    const messages = getMessages();
 
     return (
         <div className="dashboard">
@@ -37,6 +38,7 @@ export default function DashboardPage() {
             </div >
             <div className="dashboard__right">
                 <SalesReport data={salesReport} />
+                <Messages data={messages} />
             </div>
         </div>
 

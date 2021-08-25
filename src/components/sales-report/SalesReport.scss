@@ -4,10 +4,11 @@
     margin: 0 24px;
 }
 
-table {
+
+/* table {
     width: 100%;
     border-collapse: collapse;
-}
+} */
 
 .title {
     size: 20px;
@@ -23,23 +24,27 @@ table {
     text-align: left;
 }
 
-th:nth-child(1) {
+
+/* th:nth-child(1) {
     width: 20%;
 }
 
 th:nth-child(2),
 th:nth-child(3) {
     width: 40%;
-}
+} */
 
-td,
+
+/* td,
 th {
     padding: 10px 20px;
-}
+} */
 
-td {
+
+/* td {
     height: 50px;
 }
+ */
 
 .informations {
     font-size: 13px;

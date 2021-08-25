@@ -1,5 +1,5 @@
 import React from "react";
-import "./SalesReport.scss";
+import "./SalesReport.css";
 
 export type CardSalesReport = {
     ordinalNumber: string;
