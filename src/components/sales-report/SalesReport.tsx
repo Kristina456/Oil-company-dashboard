@@ -19,10 +19,10 @@ export default function SalesReport({ data }: { data: CardSalesReport[] }) {
         <div className="sales-report">
             <div className="sales-report__title">Sales Report</div>
             <table className="sales-report__table">
-                <tr className="sales-report__header">
-                    <th className="sales-report__cell">#</th>
-                    <th className="sales-report__cell">PROVIDER</th>
-                    <th className="sales-report__cell">STATS</th>
+                <tr className="sales-report__header ">
+                    <th className="cell">#</th>
+                    <th className="cell">PROVIDER</th>
+                    <th className="cell">STATS</th>
                 </tr>
                 {
                     data.map((report) => {
@@ -32,10 +32,10 @@ export default function SalesReport({ data }: { data: CardSalesReport[] }) {
                                 <td className="informations__provider informations__row">{report.provider}</td>
                                 {report.percentage > 0 ?
 
-                                    <td className=" informations__row" style={{
+                                    <td className="informations__price informations__row" style={{
                                         color: " rgba(91, 176, 156, 1)"
                                     }}>${report.stats}(+{report.percentage * 100}%)</td> :
-                                    <td className=" informations__row" style={{
+                                    <td className="informations__price informations__row" style={{
                                         color: "rgba(221, 69, 69, 1)"
                                     }
                                     } >${report.stats}({report.percentage * 100} %)</td>}

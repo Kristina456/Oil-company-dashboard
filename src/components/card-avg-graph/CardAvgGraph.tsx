@@ -13,33 +13,30 @@ export default function CardAvgGraph() {
                 fill: false,
                 backgroundColor: "rgba(75,192,192,0.2)",
                 borderColor: "white",
-
             }],
     };
 
-    return <div className="avg-graph" >
-        <div>
-            <div>Diesel Fuel</div>
-            <div>$1.96</div>
-            <div>AVG PRICE</div>
+    const options = {
+        plugins: {
+            legend: {
+                display: false,
+
+            },
+        },
+    };
+
+    return (
+        <div className="avg-graph" >
+            <div className="avg-graph__info info">
+                <div className="info__name" >Diesel Fuel</div>
+                <div className="info__price">$1.96</div>
+                <div className="info__avg">AVG PRICE</div>
+            </div>
+            <div className="avg-graph-container">
+                <Line data={data} options={options} />
+            </div>
         </div>
-        <Line data={data}
-            options={{
-                title: {
-                    display: false,
-                    text: 'Average Rainfall per month',
-                    fontSize: 20
-                },
 
-                plugins: {
-                    legend: {
-                        display: false,
-                        position: 'right'
-                    },
-                },
-
-
-            }} />
-    </div>
+    )
 }
 

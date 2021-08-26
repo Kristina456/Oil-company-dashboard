@@ -6,10 +6,34 @@
   margin-right: 20px;
 }
 
-@media screen and (max-width: 1410px) {
-  .avg-graph {
-    min-width: 100%;
-    margin-bottom: 10px;
-  }
+.avg-graph-container {
+  position: relative;
+  top: -30px;
+  width: 300px;
+  height: 200px;
+}
+
+.avg-graph__info {
+  padding: 10px;
+  margin: 5px;
+}
+
+.info {
+  color: white;
+}
+
+.info__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.info__price {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.info__avg {
+  font-size: 10px;
+  padding-top: 5px;
 }
 /*# sourceMappingURL=CardAvgGraph.css.map */
