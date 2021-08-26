@@ -47,6 +47,9 @@
         border-radius: 50%;
         background-color: $fift-green;
     }
+    &__name-item {
+        min-width: 100px;
+    }
     &__updated-list {
         margin-bottom: 5px;
         font-weight: 900;

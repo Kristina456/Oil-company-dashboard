@@ -27,7 +27,7 @@ export default function Activity({ data }: { data: CardActivity[] }) {
                                         <img src={Path1} alt="img" />
                                     </div>
                                 </td>
-                                <td>
+                                <td className="table__name-item">
                                     <div className="table__updated-list">
                                         Updated List
                                     </div>
