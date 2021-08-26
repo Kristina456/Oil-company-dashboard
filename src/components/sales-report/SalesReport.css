@@ -1,6 +1,6 @@
 .sales-report {
   min-width: 300px;
-  max-width: 600px;
+  max-width: 300px;
   margin: 25px;
 }
 
@@ -34,7 +34,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 25px 0;
+  margin: 5px 0;
   border-collapse: separate;
   height: 55px;
   font-size: 13px;

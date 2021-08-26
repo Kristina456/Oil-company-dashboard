@@ -1,5 +1,5 @@
 .messages {
-  max-width: 600px;
+  max-width: 300px;
   margin: 15px;
 }
 
@@ -11,6 +11,7 @@
 }
 
 .message {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,7 +27,6 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-width: 70%;
   padding: 0 10px;
 }
 

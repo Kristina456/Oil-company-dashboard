@@ -188,8 +188,7 @@ export function getMessages(): CardMessage[] {
 		},
 		{
 			name: 'Jessica Smith',
-			message:
-				'Good Morning!gfhfgh gh fghfg hf ghfg hfg hfhg fghfgh  gfhfghfgh fgh  dfgd fg dfg dfg df gdf gdfg dfg dfg df jdshfkjsdhfjks kjsdhf kjsdhf kjsdhf kjsdhf jsdkf jsdhjkfhsd jfhsdjk fshdj fhsj hj hjk shfsdj h dfgd fgdf gdfgdfgd fgdf gdf gdf ',
+			message: 'Good Morning!',
 			time: '32MIN'
 		}
 	];

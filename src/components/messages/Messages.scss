@@ -1,6 +1,6 @@
 @import "../../scss/Colors.scss";
 .messages {
-    max-width: 600px;
+    max-width: 300px;
     margin: 15px;
     &__title {
         font-weight: 900;
@@ -11,6 +11,7 @@
 }
 
 .message {
+    width: 100%;
     display: flex;
     align-items: center;
     min-height: 60px;
@@ -18,7 +19,6 @@
     margin: 20px 0;
     &__item {
         flex: 1;
-        min-width: 70%;
         padding: 0 10px;
     }
     &__avatar-img {
