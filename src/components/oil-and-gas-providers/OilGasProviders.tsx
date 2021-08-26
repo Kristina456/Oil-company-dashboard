@@ -1,5 +1,5 @@
 import React from "react";
-import "./OilGasProvider.scss";
+import "./OilGasProvider.css";
 import Shape2 from "../../images/Shape2.png";
 
 export type CardOilGasProviders = {
@@ -16,19 +16,19 @@ export default function OilGasProviders({ data }: { data: CardOilGasProviders[] 
 
     return (
         <div className="oil-gas-providers">
-            <div className="title">Oil & Gas Providers </div>
-            <table>
+            <div className="oil-gas-providers__title">Oil & Gas Providers </div>
+            <table className="oil-gas-providers__table">
                 {
                     data.map((info, i) => {
                         return (
                             <tr className="oil-gas-table">
-                                <td className="oil-gas-row">
-                                    <div className="first-chart" style={{ backgroundColor: backgroundColors[i], color: colors[i] }}>
+                                <td className="oil-gas-table__circle">
+                                    <div className="oil-gas-table__chart" style={{ backgroundColor: backgroundColors[i], color: colors[i] }}>
                                         {info.name.charAt(0)}
                                     </div>
                                 </td>
-                                <td className="factory-name oil-gas-row">{info.name}</td>
-                                <td className="location oil-gas-row"><img src={Shape2} alt="location" /> {info.location}</td>
+                                <td className="oil-gas-table__factory-name ">{info.name}</td>
+                                <td className="oil-gas-table__location "><img src={Shape2} alt="location" /> {info.location}</td>
                                 <td>link</td>
                             </tr>
                         )

@@ -5,24 +5,45 @@
   height: 460px;
 }
 
-.title {
+.oil-gas-providers__title {
   font-size: 20px;
   color: #35384d;
   font-weight: 900;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-.oil-gas-row {
-  padding: 5px;
-  font-size: 12px;
+.oil-gas-providers__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .oil-gas-table {
-  height: 25px;
-  margin: 35px 0;
+  font-size: 12px;
+  margin-bottom: 20px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.first-chart {
+.oil-gas-table__circle {
+  height: 30px;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+.oil-gas-table__chart {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -37,13 +58,18 @@
           align-items: center;
 }
 
-.factory-name {
+.oil-gas-table__factory-name {
   font-weight: 600;
   color: #35384d;
+  width: 30%;
+  margin-left: 5px;
+  min-width: 60px;
 }
 
-.location {
+.oil-gas-table__location {
   color: #9da8b6;
-  padding-left: 50px;
+  width: 50%;
+  margin-left: 5px;
+  min-width: 150px;
 }
 /*# sourceMappingURL=OilGasProvider.css.map */
