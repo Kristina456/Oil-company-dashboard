@@ -8,6 +8,10 @@
     max-width: 1000px;
 }
 
+.dashboard__right {
+    flex-wrap: wrap;
+}
+
 .dashboard__left__cardAvg {
     display: flex;
     flex-direction: row;

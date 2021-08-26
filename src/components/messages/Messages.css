@@ -5,9 +5,9 @@
 
 .messages__title {
   font-weight: 900;
-  size: 20px;
+  font-size: 20px;
   color: #35384d;
-  margin: 0 25px;
+  margin: 25px 0;
 }
 
 .message {
@@ -19,7 +19,7 @@
           align-items: center;
   min-height: 60px;
   padding: 10px;
-  margin: 15px;
+  margin: 20px 0;
 }
 
 .message__item {

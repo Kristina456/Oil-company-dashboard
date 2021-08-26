@@ -11,6 +11,11 @@
   max-width: 1000px;
 }
 
+.dashboard__right {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .dashboard__left__cardAvg {
   display: -webkit-box;
   display: -ms-flexbox;

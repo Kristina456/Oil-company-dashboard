@@ -1,54 +1,100 @@
 .sales-report {
   min-width: 300px;
-  margin: 0 24px;
+  max-width: 600px;
+  margin: 25px;
 }
 
-/* table {
-    width: 100%;
-    border-collapse: collapse;
-} */
-.title {
-  size: 20px;
-  padding-left: 20px;
+.sales-report__title {
+  font-size: 20px;
   color: #35384d;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 25px;
 }
 
-.subtitles {
+.sales-report__header {
   font-size: 13px;
   color: #9da8b6;
-  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
 }
 
-/* th:nth-child(1) {
-    width: 20%;
-}
-
-th:nth-child(2),
-th:nth-child(3) {
-    width: 40%;
-} */
-/* td,
-th {
-    padding: 10px 20px;
-} */
-/* td {
-    height: 50px;
-}
- */
-.informations {
+.sales-report__informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 25px 0;
+  border-collapse: separate;
+  height: 55px;
   font-size: 13px;
-  color: #35384d;
-  border-radius: 5px;
 }
 
 .informations__provider {
   font-weight: 900;
 }
 
+.sales-report__cell {
+  text-align: start;
+}
+
+.sales-report__cell:nth-child(1),
+.informations__number {
+  width: 10%;
+}
+
+.sales-report__cell:nth-child(2),
+.sales-report__cell:nth-child(3),
+.informations__row {
+  width: 40%;
+}
+
+.informations {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
 .informations:hover {
   background-color: white;
   border-radius: 5px;
 }
+
+/*
+.informations__row,
+.sales-report__cell {
+    padding: 10px 20px;
+}
+
+.informations__row,
+.informations__number {
+    height: 50px;
+}
+
+.sales-report__informations {
+    font-size: 13px;
+    color: $first-color;
+    border-radius: 5px;
+    padding: 15px 0;
+    background-color: rebeccapurple;
+    border-collapse: separate;
+    margin: 50px;
+}
+
+.informations__provider {
+    font-weight: 900;
+}
+
+ */
 /*# sourceMappingURL=SalesReport.css.map */
