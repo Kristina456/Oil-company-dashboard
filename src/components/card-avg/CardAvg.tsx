@@ -22,10 +22,10 @@ export default function CardAvg({ data }: { data: CardAvgData[] }) {
                     return (
                         <div className="card">
                             <div className="card__item">
-                                <div className="cardAvg__title" >{avgData.title}</div>
-                                <div className="cardAvg__dolar-price">${avgData.price}</div>
-                                <div className="cardAvg__avg-price">AVG PRICE</div>
-                                <div className="cardAvg__price-percentage__item">
+                                <div className="card__title" >{avgData.title}</div>
+                                <div className="card__dolar-price">${avgData.price}</div>
+                                <div className="card__price">AVG PRICE</div>
+                                <div className="card__price-percentage">
                                     <span>{avgData.averagePrice > 0 ?
                                         <div style={{ color: "rgba(221, 69, 69, 1)" }}>
                                             <span>&#8595;</span>

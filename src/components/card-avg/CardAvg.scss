@@ -9,31 +9,32 @@
 .card {
     width: calc(100% /3 - 12px);
     min-width: 150px;
-}
-
-.card__item {
-    background-color: #ffffff;
-    height: 230px;
-    padding: 16px;
-    margin: 0px 0 10px 0px;
-    color: $first-color;
-}
-
-.cardAvg__title {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 12px 0;
-}
-
-.cardAvg__dolar-price {
-    color: $first-color;
-    size: 25px;
-    font-weight: 900;
-    margin: 12px 0;
-}
-
-.cardAvg__avg-price {
-    font-size: 8px;
-    font-weight: 500;
-    color: $secondary-color;
+    &__item {
+        background-color: #ffffff;
+        height: 230px;
+        padding: 16px;
+        margin: 0px 0 10px 0px;
+        color: $first-color;
+        &__title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 12px 0;
+            color: $first-color;
+        }
+        &__dolar-price {
+            color: $first-color;
+            size: 25px;
+            font-weight: 900;
+            margin: 12px 0;
+        }
+        &__price {
+            font-size: 8px;
+            font-weight: 500;
+            color: $secondary-color;
+            margin: 5px 0;
+        }
+        &__price-percentage {
+            size: 16px;
+        }
+    }
 }
