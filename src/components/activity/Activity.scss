@@ -7,29 +7,26 @@
     flex: 1 0 50%;
     margin-top: 30px;
     height: 460px;
+    &__title {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &__table {
+        width: 100%;
+    }
 }
 
-.activity__title {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.activity__title__main {
+.title__main {
     color: $first-color;
     font-weight: 900;
     font-size: 20px;
     margin-right: 10px;
 }
 
-.activity__title__subtitle {
+.title__subtitle {
     color: $secondary-color;
     font-size: 16px;
     font-weight: 500;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
 }
 
 .tableData {

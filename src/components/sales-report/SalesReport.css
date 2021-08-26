@@ -71,6 +71,10 @@
   border-radius: 5px;
 }
 
+.sales-report__table {
+  width: 100%;
+}
+
 /*
 .informations__row,
 .sales-report__cell {

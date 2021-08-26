@@ -13,7 +13,7 @@ export default function Messages({ data }: { data: CardMessage[] }) {
     return (
         <div className="messages">
             <div className="messages__title">Messages</div>
-            <table>
+            <table className="messages__table">
                 {data.map((data) => {
                     return (
                         <tr className="message">

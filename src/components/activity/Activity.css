@@ -17,22 +17,21 @@
   margin-bottom: 30px;
 }
 
-.activity__title__main {
+.activity__table {
+  width: 100%;
+}
+
+.title__main {
   color: #35384d;
   font-weight: 900;
   font-size: 20px;
   margin-right: 10px;
 }
 
-.activity__title__subtitle {
+.title__subtitle {
   color: #9da8b6;
   font-size: 16px;
   font-weight: 500;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
 }
 
 .tableData {
@@ -75,4 +74,4 @@ table {
 .dataActivity {
   font-weight: 900;
 }
-/*# sourceMappingURL=Activity.module.css.map */
+/*# sourceMappingURL=Activity.css.map */
