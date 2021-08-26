@@ -23,28 +23,28 @@
   color: #35384d;
 }
 
-.card__item__title {
+.card__title {
   font-size: 20px;
   font-weight: bold;
   margin: 12px 0;
   color: #35384d;
 }
 
-.card__item__dolar-price {
+.card__dolar-price {
   color: #35384d;
   size: 25px;
   font-weight: 900;
   margin: 12px 0;
 }
 
-.card__item__price {
+.card__price {
   font-size: 8px;
   font-weight: 500;
   color: #9da8b6;
   margin: 5px 0;
 }
 
-.card__item__price-percentage {
+.card__price-percentage {
   size: 16px;
 }
 /*# sourceMappingURL=CardAvg.css.map */
