@@ -25,7 +25,8 @@ export default function Messages({ data }: { data: CardMessage[] }) {
                                 <div className="message__name">{data.name}</div>
                                 <div className="message__message">{data.message}</div>
                             </td>
-                            <td> <div className="message__time">{data.time}</div>
+                            <td>
+                                <div className="message__time">{data.time}</div>
                             </td>
                         </tr>
                     )
