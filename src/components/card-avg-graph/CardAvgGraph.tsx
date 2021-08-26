@@ -20,8 +20,10 @@ export default function CardAvgGraph() {
         plugins: {
             legend: {
                 display: false,
-
             },
+            xAxes: {
+                display: false,
+            }
         },
     };
 
