@@ -1,12 +1,11 @@
 @import "../../scss/Colors.scss";
 .activity {
-    background-color: white;
-    padding: 35px;
-    font-size: 13px;
-    width: 100%;
-    flex: 1 0 50%;
-    margin-top: 30px;
     height: 460px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 35px;
+    background-color: white;
+    font-size: 13px;
     &__title {
         display: flex;
         margin-bottom: 30px;
@@ -16,50 +15,48 @@
     }
 }
 
-.title__main {
-    color: $first-color;
-    font-weight: 900;
-    font-size: 20px;
-    margin-right: 10px;
+.title {
+    &__main {
+        margin-right: 10px;
+        font-weight: 900;
+        font-size: 20px;
+        color: $first-color;
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        color: $secondary-color;
+    }
 }
 
-.title__subtitle {
-    color: $secondary-color;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.tableData {
-    height: calc(400px / 6);
-}
-
-.dataTime {
-    font-weight: 900;
-    font-size: 13px;
-    color: $first-color;
-}
-
-.img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: $fift-green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.updatedList {
-    font-weight: 900;
-    color: $first-color;
-    margin-bottom: 5px;
-}
-
-.name,
-.dataActivity {
-    color: $secondary-color;
-}
-
-.dataActivity {
-    font-weight: 900;
+.table {
+    &__item {
+        height: calc(400px / 6);
+    }
+    &__time {
+        font-weight: 900;
+        font-size: 13px;
+        color: $first-color;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: $fift-green;
+    }
+    &__updated-list {
+        margin-bottom: 5px;
+        font-weight: 900;
+        color: $first-color;
+    }
+    &__name {
+        color: $secondary-color;
+    }
+    &__data-activity {
+        font-weight: 900;
+        color: $secondary-color;
+    }
 }

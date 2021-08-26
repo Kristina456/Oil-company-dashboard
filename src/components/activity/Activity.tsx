@@ -15,27 +15,27 @@ export default function Activity({ data }: { data: CardActivity[] }) {
                 <div className="title__main">Activity</div>
                 <div className="title__subtitle">this month</div>
             </div >
-            <table className="activity__table">
+            <table className="activity__table table">
                 {
                     data.map((data) => {
                         return (
-                            <tr className="tableData">
-                                <td className="dataTime">
+                            <tr className="table__item">
+                                <td className="table__time">
                                     {data.time}</td>
                                 <td >
-                                    <div className="img">
+                                    <div className="table__img">
                                         <img src={Path1} alt="img" />
                                     </div>
                                 </td>
                                 <td>
-                                    <div className="updatedList">
+                                    <div className="table__updated-list">
                                         Updated List
                                     </div>
-                                    <div className="name">
+                                    <div className="table__name">
                                         {data.name}
                                     </div>
                                 </td>
-                                <td className="dataActivity">
+                                <td className="table__data-activity">
                                     {data.activity}
                                 </td>
                             </tr>

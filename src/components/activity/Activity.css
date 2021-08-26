@@ -1,13 +1,10 @@
 .activity {
-  background-color: white;
-  padding: 35px;
-  font-size: 13px;
-  width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-  margin-top: 30px;
   height: 460px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 35px;
+  background-color: white;
+  font-size: 13px;
 }
 
 .activity__title {
@@ -22,33 +19,29 @@
 }
 
 .title__main {
-  color: #35384d;
+  margin-right: 10px;
   font-weight: 900;
   font-size: 20px;
-  margin-right: 10px;
+  color: #35384d;
 }
 
 .title__subtitle {
-  color: #9da8b6;
   font-size: 16px;
   font-weight: 500;
+  color: #9da8b6;
 }
 
-.tableData {
+.table__item {
   height: calc(400px / 6);
 }
 
-.dataTime {
+.table__time {
   font-weight: 900;
   font-size: 13px;
   color: #35384d;
 }
 
-.img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: rgba(37, 215, 130, 0.5);
+.table__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,20 +51,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(37, 215, 130, 0.5);
 }
 
-.updatedList {
+.table__updated-list {
+  margin-bottom: 5px;
   font-weight: 900;
   color: #35384d;
-  margin-bottom: 5px;
 }
 
-.name,
-.dataActivity {
+.table__name {
   color: #9da8b6;
 }
 
-.dataActivity {
+.table__data-activity {
   font-weight: 900;
+  color: #9da8b6;
 }
 /*# sourceMappingURL=Activity.css.map */
